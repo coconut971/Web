@@ -11,14 +11,19 @@
 
 </head>
 <header class="main-header">
+
         <div class="header-logo">
+            
             <img src="img/logo.jpg" alt="logo">
         </div>
         <div class="header-menu">
             <nav>
                 <ul>
                     <li>
-                        <a href="">Déposer une annonce</a>
+                        <a href="Annonce.php">Déposer une annonce</a>
+                    </li>
+                    <li>
+                        <a href="index.php">Acceuil</a>
                     </li>
                     <li>
                         <a href="">Rechercher</a>
@@ -56,6 +61,8 @@
             </ul>
         </div>
     </header>
+    <body>
+
 
 
 
