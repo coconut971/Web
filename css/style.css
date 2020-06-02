@@ -1,0 +1,42 @@
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-menu a {
+    margin: 0px 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.header-profile ul {
+    display: flex;
+    list-style: none;
+}
+
+.header-profile ul a {
+    margin: 0px 10px;
+    color: black;
+    text-decoration: none;
+}
+.btn {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.card {
+    margin: 10px;
+    
+    
+}
+
+
