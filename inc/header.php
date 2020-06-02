@@ -35,7 +35,7 @@
             <ul>
                 
                 <li>
-                    <a href="">Mon profil
+                    <a href="profile.php">Mon profil
                         
                     </a>
                 </li>
@@ -47,7 +47,7 @@
                     
                 </li>
                 <li>
-                    <a href="">S'inscrire
+                    <a href="Inscription.php">S'inscrire
                     <i class="fas fa-user-plus"></i>
                         
                     </a>
