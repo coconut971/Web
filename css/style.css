@@ -16,16 +16,6 @@
     text-decoration: none;
 }
 
-.header-profile ul {
-    display: flex;
-    list-style: none;
-}
-
-.header-profile ul a {
-    margin: 0px 10px;
-    color: black;
-    text-decoration: none;
-}
 .btn {
     text-decoration: none;
     padding: 10px 15px;
@@ -39,5 +29,25 @@
     
 }
 
+@media screen and (min-width: 901px) and (max-width: 1050px) {
+	header .menu ul li a {
+		padding: 10px 10px ;
+	}
 
+	.menuleft {
+		font-size: 12px ;
+	}
 
+	.menuleft ul li a {
+		padding: 6px 40px 6px 42px ;
+	}
+
+	.menuleft ul li a img {
+		margin-top: -4px ;
+	}
+
+	.artDesc p {
+	    width: 45% ;
+	    margin: 0 ;
+	}
+}

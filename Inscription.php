@@ -34,6 +34,16 @@
                     <input type="email " class="form-control" id="email" name="email">
                 </div>
 
+                <div class="form-group">
+                    <label for="titre">Mot de passe </label>
+                    <input type="password " class="form-control" id="mdp" name="mdp">
+                </div>
+
+                <div class="form-group">
+                    <label for="titre">Confirmation  </label>
+                    <input type="password " class="form-control" id="mdp" name="mdp">
+                </div>
+
 
                 <div class="form-group">
                     <label for="contenu">URL image</label>
