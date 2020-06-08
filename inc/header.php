@@ -1,3 +1,9 @@
+<?php
+	// Initialiser la session
+        session_start();
+        
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -37,24 +43,71 @@
             </ul>
         </nav>
     </div>
-    <div class="menu">
-        <li>
-            <a>Mon compte</a>
-            <ul>
-                <?php if (!isset($_SESSION['id'])) { ?>
-                    <li><a href="connection.php">Connexion</a></li>
-                    <li><a href="Inscription.php">Inscription</a></li>
-                <?php } else { ?>
-                    <li><a href="moncompte.php"><?= $_SESSION['login']; ?></a></li>
-                    <li><a href="deconnection.php">Déconnexion</a></li>
+
+
+
+    <?php
+            if (isset($_SESSION['username']) && !empty($_SESSION['username'])) {
+            ?>
+
+                <div class="header-menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="panier.php">Votre panier</a>
+                            </li>
+                            <li>
+                                <a href="profil.php">Votre profil</a>
+                            </li>
+                            <li>
+                                <a href="logout.php">Déconnexion</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            <?php
+            } else {
+            ?>
+            <div class="header-menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="register.php">Inscription</a>
+                            </li>
+                            <li>
+                                <a href="login.php">Connexion</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <?php } ?>
-            </ul>
-        </li>
+
+
+
+
+
+    
+    
+
+    <div class="container-fluid mt-5">
+
+
+
+
 
 
 
     </div>
+
+
+
+
+
+
+
 </header>
+
 
 <body>
     <?php include "data\data.php" ?>

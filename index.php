@@ -1,7 +1,8 @@
+
+
 <?php include "inc\header.php" ?>
 
 <p>Ceci est ma page d'accueil Lebonkoin, un site pour poster des annonces de bien à vendre et pour en acheter</p>
-<?php var_dump($_SESSION); ?>
 <div class="row">
 
         
@@ -62,9 +63,15 @@
                     
                 </div>
 
-        
 
 </div>
+
+<?php 
+if (isset($_SESSION['id']) AND isset($_SESSION['pseudo']))
+{
+    echo 'Bonjour ' . $_SESSION['pseudo'];
+}
+?>
 
 <?php include "inc\jooter.php" ?>
 

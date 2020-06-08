@@ -2,12 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+	padding: 20px;
+	
 }
 
 .header-menu ul {
     display: flex;
-    list-style: none;
+	list-style: none;
+	
 }
 
 .header-menu a {
