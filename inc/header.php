@@ -84,27 +84,9 @@
                 <?php } ?>
 
 
-
-
-
-    
-    
-
     <div class="container-fluid mt-5">
 
-
-
-
-
-
-
     </div>
-
-
-
-
-
-
 
 </header>
 
