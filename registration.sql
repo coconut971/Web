@@ -33,7 +33,9 @@ CREATE TABLE `users` (
   `email` varchar(100) NOT NULL,
   `mdp` varchar(100) NOT NULL,
   `tel` varchar(100) NOT NULL,
-  `adresse` varchar(255) NOT NULL
+  `adresse` varchar(255) NOT NULL,
+  `avatar` varchar(255) DEFAULT 'default.png',
+  `inscription` datetime DEFAULT CURRENT_TIMESTAMP
   
   
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -42,9 +44,9 @@ CREATE TABLE `users` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `email`, `mdp`, `tel`, `adresse`) VALUES
-(1, 'Clément', 'clement.dufourlamartinie@ynov.com', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', '0770015105', '38 rue de fontenay 94300 Vincennes'),
-(4, 'admin', 'admin@gmail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '0613270658', '27 bis rue d estienne d orves 94160 Fontenay Sous bois');
+INSERT INTO `users` (`id`, `username`, `email`, `mdp`, `tel`, `adresse`, `avatar`, `inscription`) VALUES
+(1, 'Clément', 'clement.dufourlamartinie@ynov.com', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', '0770015105', '38 rue de fontenay 94300 Vincennes', 'default.png', '2020-06-02 14:20:49'),
+(4, 'admin', 'admin@gmail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '0613270658', '27 bis rue d estienne d orves 94160 Fontenay Sous bois', 'default.png', '2020-06-02 14:20:49');
 
 --
 -- Index pour les tables déchargées
