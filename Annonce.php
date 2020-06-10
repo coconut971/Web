@@ -1,5 +1,11 @@
 <?php include "inc\header.php" ?>
+<?php
 
+
+if (empty($_GET['user']) && empty($_SESSION['username'])) {
+    header('Location: index.php');
+    die;
+}?>
 <div class="admin">  
 
             <form method="POST" action="insertion.php" enctype="multipart/form-data">
