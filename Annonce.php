@@ -39,6 +39,8 @@
 
                 <button type="submit" class="btn btn-primary">Enregister</button>
 
+</div>
+
 </form>
 
 
