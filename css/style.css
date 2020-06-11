@@ -56,3 +56,11 @@
 body{
 	list-style: none;
 }
+
+
+
+footer{
+	bottom: 0%;
+	position: fixed;
+
+}

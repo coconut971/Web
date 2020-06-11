@@ -61,7 +61,7 @@ if (empty($_GET['user']) && empty($_SESSION['username'])) {
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane pt-5 fade show active" id="list-about" role="tabpanel" aria-labelledby="list-profile-list">
                 <div class="col row">
-                    <form class="row col mb-5" action="insertionmail.php" method="post">
+                    <form class="row col mb-5" action="modification_profil/insertionmail.php" method="post">
     
                         <div class="form-group col-md-12 col-sm-12 row">
                             <label for="email" class="col-md-3 col-sm-12">Adresse email </label>

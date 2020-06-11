@@ -54,7 +54,7 @@
                     <nav>
                         <ul>
                             <li>
-                                <a href="panier.php">Votre panier</a>
+                                <a href="ajax" target="_blank" >Tchat</a>
                             </li>
                             <li>
                                 <a href="profil.php">Votre profil</a>
