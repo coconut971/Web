@@ -13,10 +13,12 @@ $pdo = new PDO("mysql:host=localhost;dbname=registration", "root", "", array(PDO
 
                 <div class="card">
                         <div class="card-body">
+                           
                                 
                                 <h5 class="card-title"><?php echo $annonce->titre ;?></h5>
-                                <p><?php echo $annonce->descriptions ;?></p>
-                                <p><?php echo $annonce->prix ;?></p>
+                                <p><?php echo substr($annonce->descriptions, 0, 100) . "...";?></p> 
+                                
+                                <p><?php echo ($annonce->prix ) . "€" ;?></p>
                                 <a href="" class="btn btn-primary">Voir détails</a>
                                  
                         </div>

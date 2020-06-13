@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 11 juin 2020 à 14:37
+-- Généré le : sam. 13 juin 2020 à 15:14
 -- Version du serveur :  10.4.11-MariaDB
--- Version de PHP : 7.4.4
+-- Version de PHP : 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -37,6 +37,14 @@ CREATE TABLE `annonce` (
   `url_img3` varchar(500) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Déchargement des données de la table `annonce`
+--
+
+INSERT INTO `annonce` (`id_annonce`, `titre`, `descriptions`, `prix`, `url_img1`, `url_img2`, `url_img3`) VALUES
+(4, 'Canard en plastique noir', 'Bonjour, je me sépare de mon canard en plastique noir cela fait 3 ans qu il fait partie de mon quotidiens j espère que vous en prendrez grand soins', '55', 'https://fr.shop-orchestra.com/dw/image/v2/AARU_PRD/on/demandware.static/-/Sites-orchestra-master/default/dwc933db16/images/view/P/4/8/0/2/P48022_SANS_1_X.jpg?sw=430&sh=430&sm=fit', '', ''),
+(5, 'Canard en plastique rouge ', 'Bonjour, je vend mon canard en plastique rouge, c était mon fidèle compagnon depuis maintenant 6 ans je doit m en séparer car je viens d acquérir un canard argenté et les deux ne peuvent pas cohabité. Pour plus d informations vous pouvez me contacter via ', '92', 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLOoxLUy2KaIcjDliyQpLWSBD7zTpk-B3ceZ7JBwTg44H3Oi6PLVUkwaez6zkV1wtSwsJgpOnBpA&usqp=CAc', 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBAQEw8SEhAQDw8PEBAPEA8PDw8QFREWFhURFRMYHSggGBolGxUVITEhJSkrLi4uFx8/ODMtNygtLisBCgoKDg0OGhAQGi0dHx0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLi0tLS0tLS0tLS0tLS0tLS0tLSstLf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAwADAQAAAAAAAAAAAAAAAwQFAQIGB//EADoQAAICAQIEBAQCBgsBAAAAAAABAgMRBAUSITFRBkFhcROBkaFSsRQiIzNCkhUyQ1NicoKiweHxB//EABoBAQADAQEBAAAAAAAAAAAAAAACAwQBBQb/xAAsEQEAAgIBBAEDAwMFAAAAAAAAAQIDEQQSITFBBRMiUTJhcRRC8BUjM4GR/9oADAMBAAIRAxEAPwD7iAAAAAAAA', '');
+
 -- --------------------------------------------------------
 
 --
@@ -67,12 +75,8 @@ CREATE TABLE `messages` (
 --
 
 INSERT INTO `messages` (`id`, `author`, `content`, `created_at`) VALUES
-(61, 'clement', 'salut', '2020-06-11 14:24:25'),
-(62, 'Jeanne', 'Comment vas tu?', '2020-06-11 14:27:19'),
-(63, 'Clément', 'comment tu va', '2020-06-11 14:27:30'),
-(64, 'Clément', 'Comment vas tu?', '2020-06-11 14:27:38'),
-(65, 'Jeanne', 'Comment vas tu?', '2020-06-11 14:27:44'),
-(66, 'Jeanne', 'Comment vas tu?', '2020-06-11 14:27:49');
+(71, 'Franck', 'Oui bien sur quel canard vous interesse?', '2020-06-12 17:05:17'),
+(70, 'Clement', 'Bonjour Franck, je souhaiterais vous acheter votre canard que vous vendez est-t-il possible de convenir d\'un rendez- vous?', '2020-06-12 17:04:38');
 
 -- --------------------------------------------------------
 
@@ -136,7 +140,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `annonce`
 --
 ALTER TABLE `annonce`
-  MODIFY `id_annonce` int(3) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_annonce` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT pour la table `commentaire`
@@ -148,13 +152,13 @@ ALTER TABLE `commentaire`
 -- AUTO_INCREMENT pour la table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=67;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
 
 --
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

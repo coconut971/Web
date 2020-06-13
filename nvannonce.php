@@ -8,6 +8,10 @@ if (empty($_GET['user']) && empty($_SESSION['username'])) {
 }?>
 
 <?php 
+
+
+
+
 if (!empty($_POST)) {
     $pdo = new PDO("mysql:host=localhost;dbname=registration", "root", "" , array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
     $_POST["titre1"] = htmlentities($_POST["titre"], ENT_QUOTES);
@@ -16,10 +20,10 @@ if (!empty($_POST)) {
     $_POST["url_img11"] = htmlentities($_POST["url_img1"], ENT_QUOTES);
     $_POST["url_img22"] = htmlentities($_POST["url_img2"], ENT_QUOTES);
     $_POST["url_img33"] = htmlentities($_POST["url_img3"], ENT_QUOTES);
-    $result = $pdo->exec("INSERT INTO annonce (titre, descriptions, prix, url_img1, url_img2, irl_img3) VALUES ('$_POST[titre]', '$_POST[descriptions]', '$_POST[prix]', '$_POST[irl_img1]', '$_POST[irl_img2]', '$_POST[irl_img3]');");
+    $result = $pdo->exec("INSERT INTO annonce (titre, descriptions, prix, url_img1, url_img2, url_img3) VALUES ('$_POST[titre]', '$_POST[descriptions]', '$_POST[prix]', '$_POST[url_img1]', '$_POST[url_img2]', '$_POST[url_img3]');");
 
 
-    echo ADDED;
+    echo "Votre annonce à été publié";
 }
 
 
@@ -27,7 +31,7 @@ if (!empty($_POST)) {
 
 <div class="admin">  
 
-            <form method="POST" action="insertion.php" enctype="multipart/form-data">
+            <form method="POST" action="" enctype="multipart/form-data">
 
                   <h2>Nouvelle annonce</h2> 
                 
