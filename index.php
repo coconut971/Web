@@ -1,69 +1,30 @@
+<?php 
 
+$pdo = new PDO("mysql:host=localhost;dbname=registration", "root", "", array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 
+?>
 <?php include "inc\header.php" ?>
 
 <p>Ceci est ma page d'accueil Lebonkoin, un site pour poster des annonces de bien à vendre et pour en acheter</p>
-<div class="row">
+<div class="row" id="annonce">
 
-        
+        <?php $result = $pdo->query("SELECT * FROM annonce");
+                    while($annonce = $result->fetch(PDO::FETCH_OBJ)) { ?>
 
                 <div class="card">
                         <div class="card-body">
-                                <h5 class="card-title">Ceci est mon titre</h5>
-                                <p>Je vend mon bien dans le 10ème arrondissement de paris</p>
-                                <a href="" class="btn btn-primary">Voir détails</a>
                                 
+                                <h5 class="card-title"><?php echo $annonce->titre ;?></h5>
+                                <p><?php echo $annonce->descriptions ;?></p>
+                                <p><?php echo $annonce->prix ;?></p>
+                                <a href="" class="btn btn-primary">Voir détails</a>
+                                 
                         </div>
                         
                         
                     
                 </div>
-                <div class="card">
-                        <div class="card-body">
-                                <h5 class="card-title">Ceci est mon titre</h5>
-                                <p>Je vend mon bien dans le 10ème arrondissement de paris</p>
-                                <a href="" class="btn btn-primary">Voir détails</a>
-                                
-                        </div>
-                        
-                        
-                    
-                </div>
-                <div class="card">
-                        <div class="card-body">
-                                <h5 class="card-title">Ceci est mon titre2</h5>
-                                <p>Je vend mon bien dans le 10ème arrondissement de paris</p>
-                                <a href="" class="btn btn-primary">Voir détails</a>
-                                
-                        </div>
-                        
-                        
-                    
-                </div>
-                <div class="card">
-                        <div class="card-body">
-                                <h5 class="card-title">Ceci est mon titre3</h5>
-                                <p>Je vend mon bien dans le 10ème arrondissement de paris</p>
-                                <a href="" class="btn btn-primary">Voir détails</a>
-                                
-                        </div>
-                        
-                        
-                    
-                </div>
-                <div class="card">
-                        <div class="card-body">
-                                <h5 class="card-title">Ceci est mon titre4</h5>
-                                <p>Je vend mon bien dans le 10ème arrondissement de paris</p>
-                                <a href="" class="btn btn-primary">Voir détails</a>
-                                
-                        </div>
-                        
-                        
-                    
-                </div>
-
-
+                    <?php } ?>
 </div>
 
 
