@@ -19,7 +19,7 @@ if (!empty($_POST)) {
     $result = $pdo->exec("INSERT INTO annonce (titre, descriptions, prix, url_img1, url_img2, irl_img3) VALUES ('$_POST[titre]', '$_POST[descriptions]', '$_POST[prix]', '$_POST[irl_img1]', '$_POST[irl_img2]', '$_POST[irl_img3]');");
 
 
-    echo ADDED
+    echo ADDED;
 }
 
 
