@@ -64,3 +64,8 @@ footer{
 	position: fixed;
 
 }
+
+.sucess{
+	color: blueviolet;
+	font-style: italic;
+}

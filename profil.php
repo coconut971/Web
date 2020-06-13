@@ -7,6 +7,7 @@ if (empty($_GET['user']) && empty($_SESSION['username'])) {
     die;
 }
 
+//Cela sélectionne les infos de la base de donnée 
 if (!empty($_GET['user'])) {
     $userQuery = $dbh->prepare("SELECT id,username,email,tel,adresse,inscription,,avatar FROM users WHERE  username = '" . $_SESSION['username'] . "'");
     $userQuery->bindValue(':id', $_GET['user'], PDO::PARAM_INT);
@@ -26,7 +27,7 @@ $user = !isset($sqlUser) ? $_SESSION['username'] : $sqlUser;
 
 <div class="row col-md-8 m-auto">
 
-    <!-- Left side -->
+    <!--  Cela affiche les informations de l'utilisateur (image, username et date d'inscription) --> 
     <div class="col-md-3 col-sm-12 mb-5">
         <div class="col-md-9 m-auto">
             <img src="img/utilisateur/<?php $result = $pdo->query("SELECT * FROM users WHERE username = '" . $_SESSION['username'] . "'");
@@ -49,10 +50,10 @@ $user = !isset($sqlUser) ? $_SESSION['username'] : $sqlUser;
         </ul>
     </div>
 
-    <!-- Right side-->
+    
     <div class="col-md-9 col-sm-12 tab-content" id="nav-tabContent">
 
-        <!-- Tab list -->
+
         <ul class="nav nav-tabs" id="list-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link text-dark font-weight-bold active" href="#list-about" id="list-profile-list" data-toggle="list" role="tab" aria-controls="home">À propos</a>
@@ -62,7 +63,7 @@ $user = !isset($sqlUser) ? $_SESSION['username'] : $sqlUser;
             </li>
         </ul>
 
-        <!-- About -->
+        <!-- Cela affiche les informations de l'utilisateur (mail, téléphone et adresse) -->
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane pt-5 fade show active" id="list-about" role="tabpanel" aria-labelledby="list-profile-list">
                 <div class="col row">

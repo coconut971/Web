@@ -1,7 +1,7 @@
 <?php include "inc\header.php" ?>
 
 <?php
-
+//Insertion dans la base de donnée de la modification du mail 
 $pdo = new PDO("mysql:host=localhost;dbname=registration", "root", "" , array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 $result = $pdo->exec("UPDATE users SET email = '$_POST[email]' WHERE username = '" . $_SESSION['username'] . "'  ");
 

@@ -1,7 +1,7 @@
 <?php include "inc\header.php" ?>
 
 
-<?php
+<?php //Page d'inscription 
 
 if (isset($_REQUEST['username'], $_REQUEST['email'], $_REQUEST['mdp'], $_REQUEST['tel'], $_REQUEST['adresse'])){
 	// récupérer le nom d'utilisateur et supprimer les antislashes ajoutés par le formulaire

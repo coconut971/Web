@@ -11,7 +11,7 @@ if (empty($_GET['user']) && empty($_SESSION['username'])) {
 
 <div class="row col-md-8 m-auto">
 
-    <!-- Left side -->
+    <!--  Cela affiche les informations de l'utilisateur (image, username et date d'inscription) -->
     <div class="col-md-3 col-sm-12 mb-5">
         <div class="col-md-9 m-auto">
             <img src="img/utilisateur/<?php $result = $pdo->query("SELECT * FROM users WHERE username = '" . $_SESSION['username'] . "'");
@@ -35,10 +35,9 @@ if (empty($_GET['user']) && empty($_SESSION['username'])) {
     </div>
 
 
-    <!-- Right side-->
+   
     <div class="col-md-9 col-sm-12 tab-content" id="nav-tabContent">
 
-        <!-- Tab list -->
         <ul class="nav nav-tabs" id="list-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link text-dark font-weight-bold active" href="profil.php" id="list-profile-list" data-toggle="list" role="tab" aria-controls="home">À propos</a>
@@ -57,7 +56,6 @@ if (empty($_GET['user']) && empty($_SESSION['username'])) {
             </li>
         </ul>
 
-        <!-- About -->
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane pt-5 fade show active" id="list-about" role="tabpanel" aria-labelledby="list-profile-list">
                 <div class="col row">
