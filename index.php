@@ -13,8 +13,10 @@ $pdo = new PDO("mysql:host=localhost;dbname=registration", "root", "", array(PDO
 
                 <div class="card">
                         <div class="card-body">
-                           
+
+        
                                 
+                        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="<?php echo $annonce->url_img1 ?>" alt="">                                          
                                 <h5 class="card-title"><?php echo $annonce->titre ;?></h5>
                                 <p><?php echo substr($annonce->descriptions, 0, 100) . "...";?></p> 
                                 
