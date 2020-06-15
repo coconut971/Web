@@ -30,7 +30,7 @@
                     <a href="nvannonce.php">Déposer une annonce</a>
                 </li>
                 <li>
-                    <a href="index.php">Acceuil</a>
+                    <a href="index.php">Accueil</a>
                 </li>
 
                 <li>
