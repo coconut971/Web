@@ -32,17 +32,19 @@
                 <li>
                     <a href="index.php">Acceuil</a>
                 </li>
+
                 <li>
-                    <a href="">Rechercher</a>
-                </li>
-                <li>
-                    <button>
-                        <i class="fas fa-search"></i>
-                    </button>
+                <form action = "verif-form.php" method = "get">
+                    <input type = "search" name = "terme">
+                    <input type = "submit" name = "s" value = "Rechercher">
+                </form>
+                    
                 </li>
             </ul>
         </nav>
     </div>
+
+
 
 
 

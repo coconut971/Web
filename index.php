@@ -5,7 +5,7 @@ $pdo = new PDO("mysql:host=localhost;dbname=registration", "root", "", array(PDO
 ?>
 <?php include "inc\header.php" ?>
 
-<p>Ceci est ma page d'accueil Lebonkoin, un site pour poster des annonces de bien à vendre et pour en acheter</p>
+<h1>Bienvenue sur Lebonkoinkoin, un site pour acheter des canards en plastique. Voici les canards en vente en ce moment !</h1>
 <div class="row" id="annonce">
 
         <?php $result = $pdo->query("SELECT * FROM annonce");
@@ -26,7 +26,7 @@ $pdo = new PDO("mysql:host=localhost;dbname=registration", "root", "", array(PDO
                         
                     
                 </div>
-                    <?php } ?>
+        <?php } ?>
 </div>
 
 
