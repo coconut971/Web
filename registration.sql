@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : sam. 13 juin 2020 à 15:14
+-- Généré le : mar. 16 juin 2020 à 11:24
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP : 7.4.6
 
@@ -42,8 +42,9 @@ CREATE TABLE `annonce` (
 --
 
 INSERT INTO `annonce` (`id_annonce`, `titre`, `descriptions`, `prix`, `url_img1`, `url_img2`, `url_img3`) VALUES
-(4, 'Canard en plastique noir', 'Bonjour, je me sépare de mon canard en plastique noir cela fait 3 ans qu il fait partie de mon quotidiens j espère que vous en prendrez grand soins', '55', 'https://fr.shop-orchestra.com/dw/image/v2/AARU_PRD/on/demandware.static/-/Sites-orchestra-master/default/dwc933db16/images/view/P/4/8/0/2/P48022_SANS_1_X.jpg?sw=430&sh=430&sm=fit', '', ''),
-(5, 'Canard en plastique rouge ', 'Bonjour, je vend mon canard en plastique rouge, c était mon fidèle compagnon depuis maintenant 6 ans je doit m en séparer car je viens d acquérir un canard argenté et les deux ne peuvent pas cohabité. Pour plus d informations vous pouvez me contacter via ', '92', 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLOoxLUy2KaIcjDliyQpLWSBD7zTpk-B3ceZ7JBwTg44H3Oi6PLVUkwaez6zkV1wtSwsJgpOnBpA&usqp=CAc', 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBAQEw8SEhAQDw8PEBAPEA8PDw8QFREWFhURFRMYHSggGBolGxUVITEhJSkrLi4uFx8/ODMtNygtLisBCgoKDg0OGhAQGi0dHx0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLi0tLS0tLS0tLS0tLS0tLS0tLSstLf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAwADAQAAAAAAAAAAAAAAAwQFAQIGB//EADoQAAICAQIEBAQCBgsBAAAAAAABAgMRBAUSITFRBkFhcROBkaFSsRQiIzNCkhUyQ1NicoKiweHxB//EABoBAQADAQEBAAAAAAAAAAAAAAACAwQBBQb/xAAsEQEAAgIBBAEDAwMFAAAAAAAAAQIDEQQSITFBBRMiUTJhcRRC8BUjM4GR/9oADAMBAAIRAxEAPwD7iAAAAAAAA', '');
+(1, 'Canard en plastique noir', 'Bonjour, je me sépare de mon canard en plastique noir cela fait 3 ans qu il fait partie de mon quotidiens j espère que vous en prendrez grand soins', '55', 'https://m.media-amazon.com/images/I/41ChByq47WL._AC_SS350_.jpg', '', ''),
+(2, 'Canard en plastique rouge ', 'Bonjour, je vend mon canard en plastique rouge, c était mon fidèle compagnon depuis maintenant 6 ans je doit m en séparer car je viens d acquérir un canard argenté et les deux ne peuvent pas cohabité. Pour plus d informations vous pouvez me contacter via ', '92', 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLOoxLUy2KaIcjDliyQpLWSBD7zTpk-B3ceZ7JBwTg44H3Oi6PLVUkwaez6zkV1wtSwsJgpOnBpA&usqp=CAc', 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEBAQEw8SEhAQDw8PEBAPEA8PDw8QFREWFhURFRMYHSggGBolGxUVITEhJSkrLi4uFx8/ODMtNygtLisBCgoKDg0OGhAQGi0dHx0rLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLi0tLS0tLS0tLS0tLS0tLS0tLSstLf/AABEIAOEA4QMBEQACEQEDEQH/xAAbAAEAAwADAQAAAAAAAAAAAAAAAwQFAQIGB//EADoQAAICAQIEBAQCBgsBAAAAAAABAgMRBAUSITFRBkFhcROBkaFSsRQiIzNCkhUyQ1NicoKiweHxB//EABoBAQADAQEBAAAAAAAAAAAAAAACAwQBBQb/xAAsEQEAAgIBBAEDAwMFAAAAAAAAAQIDEQQSITFBBRMiUTJhcRRC8BUjM4GR/9oADAMBAAIRAxEAPwD7iAAAAAAAA', ''),
+(6, 'Canard en plastique bleu', 'Salut tout le monde, j ai le regret de devoir me séparer de mon fidèle compagnon, il m a accompagné pendant toutes mes vacances à la mer. Il se camoufle à la perfection dans l eau.', '23', 'https://i.pinimg.com/564x/48/61/09/4861095ef36cd1fc27138c82bd1c43af.jpg', '', '');
 
 -- --------------------------------------------------------
 
@@ -75,8 +76,11 @@ CREATE TABLE `messages` (
 --
 
 INSERT INTO `messages` (`id`, `author`, `content`, `created_at`) VALUES
+(72, 'Clement', 'Le canard bleu me fait de l\'oeil, pouvons nous se rencontrer dans Paris comme ca je pourrais le voir de plus près?', '2020-06-16 11:13:28'),
 (71, 'Franck', 'Oui bien sur quel canard vous interesse?', '2020-06-12 17:05:17'),
-(70, 'Clement', 'Bonjour Franck, je souhaiterais vous acheter votre canard que vous vendez est-t-il possible de convenir d\'un rendez- vous?', '2020-06-12 17:04:38');
+(70, 'Clement', 'Bonjour Franck, je souhaiterais vous acheter votre canard que vous vendez est-t-il possible de convenir d\'un rendez- vous?', '2020-06-12 17:04:38'),
+(73, 'Franck ', 'Biens sûr, demain 14h00 place de l\'étoile cela vous convient-il?', '2020-06-16 11:15:01'),
+(74, 'Clement', 'Oui très bien à demain alors merci', '2020-06-16 11:15:20');
 
 -- --------------------------------------------------------
 
@@ -140,7 +144,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `annonce`
 --
 ALTER TABLE `annonce`
-  MODIFY `id_annonce` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_annonce` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `commentaire`
@@ -152,7 +156,7 @@ ALTER TABLE `commentaire`
 -- AUTO_INCREMENT pour la table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=72;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=75;
 
 --
 -- AUTO_INCREMENT pour la table `users`

@@ -37,32 +37,32 @@ if (!empty($_POST)) {
                 
 
                 <div class="form-group">
-                    <label for="titre">Titre de l'annonce</label>
+                    <label for="titre">Titre de l'annonce :</label>
                     <input type="text" class="form-control" id="titre" name="titre" >
                 </div>
 
                 <div class="form-group">
-                    <label for="descriptions">Description</label>
+                    <label for="descriptions">Description :</label>
                     <input type="text" class="form-control" id="descriptions" name="descriptions" >
                 </div>
 
                 <div class="form-group">
-                    <label for="prix">Prix</label>
+                    <label for="prix">Prix :</label>
                     <input type="text" class="form-control" id="prix" name="prix">
                 </div>
 
                 <div class="form-group">
-                    <label for="url_img1">Url de la première photo</label>
+                    <label for="url_img1">Url de la première photo :</label>
                     <input type="url" class="form-control" id="url_img1" name="url_img1" placeholder="https://media.gettyimages.com/photos/mallard-duck-walking-in-ice-picture-id155358150?s=2048x2048"></textarea>
                 </div>
                 <div class="form-group">
 
-                    <label for="url_img2">Url de la deuxième photo</label>
+                    <label for="url_img2">Url de la deuxième photo :</label>
                     <input type="url" class="form-control" id="url_img2" name="url_img2" placeholder="https://media.gettyimages.com/photos/mallard-duck-walking-in-ice-picture-id155358150?s=2048x2048"></textarea>
                 </div>
                 <div class="form-group">
 
-                    <label for="url_img3">Url de la troisième photo</label>
+                    <label for="url_img3">Url de la troisième photo :</label>
                     <input type="url" class="form-control" id="url_img3" name="url_img3" placeholder="https://media.gettyimages.com/photos/mallard-duck-walking-in-ice-picture-id155358150?s=2048x2048"></textarea>
                 </div>
 

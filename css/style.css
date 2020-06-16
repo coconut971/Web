@@ -9,13 +9,15 @@
 .header-menu ul {
     display: flex;
 	list-style: none;
+	text-align: center;
 	
 }
 
 .header-menu a {
     margin: 0px 10px;
     color: black;
-    text-decoration: none;
+	text-decoration: none;
+	align-items: center;
 }
 
 .btn {
@@ -27,47 +29,26 @@
 
 .card {
     margin: 10px;
-    
-    
 }
 
-@media screen and (min-width: 901px) and (max-width: 1050px) {
-	header .menu ul li a {
-		padding: 10px 10px ;
-	}
 
-	.menuleft {
-		font-size: 12px ;
-	}
-
-	.menuleft ul li a {
-		padding: 6px 40px 6px 42px ;
-	}
-
-	.menuleft ul li a img {
-		margin-top: -4px ;
-	}
-
-	.artDesc p {
-	    width: 45% ;
-	    margin: 0 ;
-	}
-}
 body{
 	list-style: none;
+	cursor:url(https://images.toucharger.com/img/graphiques/curseurs/animaux/canard/canard.68408.gif), auto;
 }
-
 
 
 footer{
 	bottom: 0%;
 	position: fixed;
-
 }
 
 .sucess{
 	color: blueviolet;
 	font-style: italic;
+}
+.admin{
+	text-align: center;
 }
 
 
