@@ -34,7 +34,7 @@ $user = !isset($sqlUser) ? $_SESSION['username'] : $sqlUser;
                                         while ($users = $result->fetch(PDO::FETCH_OBJ)) {
 
                                             echo $users->avatar;
-                                        } ?> " class="img-fluid rounded-circle img-thumbnail" alt="">
+                                        } ?> " class="img-fluid rounded-circle img-thumbnail" alt="photo-user">
         </div>
         <h3 class="text-center mt-3"><?php $result = $pdo->query("SELECT * FROM users WHERE username = '" . $_SESSION['username'] . "'");
                                         while ($users = $result->fetch(PDO::FETCH_OBJ)) {
